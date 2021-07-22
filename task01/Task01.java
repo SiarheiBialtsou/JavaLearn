@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class Task01 {
 
-	public static void main(String[] args) {
-		int a;
-		int b;
-		int c;
-		double z;
+    public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        double z;
 
 		/**
 		 * a = 5; b = 13; c = 2; hardcore data;
@@ -44,7 +44,7 @@ public class Task01 {
 			System.out.print("WRITE c>");
 		}
 		c = sc.nextInt();
-		
+
 		sc.close();
 
 		z = ((a - 3) * (double) b / 2) + c;
