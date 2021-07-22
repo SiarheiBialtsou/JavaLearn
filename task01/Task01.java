@@ -1,4 +1,4 @@
-/* ¹1. íàéòè ðåçóëüòàò âûðàæåíèÿ z = ((a - 3) * b / 2) + c;
+/* â„–1. Ð½Ð°Ð¹Ñ‚Ð¸ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ z = ((a - 3) * b / 2) + c;
  */
 
 package by.java.training.task01;
@@ -13,8 +13,8 @@ public class Task01 {
     public static void main(String[] args) {
         int a;
         int b;
-        int c;
-        double z;
+		int c;
+		double z;
 
 		/**
 		 * a = 5; b = 13; c = 2; hardcore data;
@@ -44,7 +44,7 @@ public class Task01 {
 			System.out.print("WRITE c>");
 		}
 		c = sc.nextInt();
-
+		
 		sc.close();
 
 		z = ((a - 3) * (double) b / 2) + c;
