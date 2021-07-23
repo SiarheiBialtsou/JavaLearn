@@ -1,39 +1,39 @@
-/**¹4 Äàíî äåéñòâèòåëüíîå ÷èñëî R âèäà nnn.ddd (òğè öèôğîâûõ ğàçğÿäà â äğîáíîé è
- * öåëîé ÷àñòÿõ). Ïîìåíÿòü ìåñòàìè äğîáíóş è öåëóş ÷àñòè ÷èñëà è âûâåñòè 
- * ïîëó÷åííîå çíà÷åíèå ÷èñëà.
+/**â„–4 Ğ”Ğ°Ğ½Ğ¾ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ R Ğ²Ğ¸Ğ´Ğ° nnn.ddd (Ñ‚Ñ€Ğ¸ Ñ†Ğ¸Ñ„Ñ€Ğ¾Ğ²Ñ‹Ñ… Ñ€Ğ°Ğ·Ñ€ÑĞ´Ğ° Ğ² Ğ´Ñ€Ğ¾Ğ±Ğ½Ğ¾Ğ¹ Ğ¸ Ñ†ĞµĞ»Ñ‹Ñ…
+ * Ñ‡Ğ°ÑÑ‚ÑÑ…). ĞŸĞ¾Ğ¼ĞµĞ½ÑÑ‚ÑŒ Ğ¼ĞµÑÑ‚Ğ°Ğ¼Ğ¸ Ğ´Ñ€Ğ¾Ğ±Ğ½ÑƒÑ Ğ¸ Ñ†ĞµĞ»ÑƒÑ Ñ‡Ğ°ÑÑ‚Ğ¸ Ğ¼ĞµÑÑ‚Ğ°Ğ¼Ğ¸ Ğ¸ Ğ²Ñ‹Ğ²ĞµÑÑ‚Ğ¸ Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ğ½Ğ¾Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ Ñ‡Ğ¸ÑĞ»Ğ°.
  */
-
 package by.java.training.task04;
 
 /**
  * @author Siarhei Bialtsou
  */
-
 import java.util.Scanner;
 
 public class Task04 {
 
-	public static void main(String[] args) {
-		double rd, rd1;
-		double dr;
+    public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+        double rd;
+        double rd1;
+        double dr;
 
-		System.out.print("Write number nnn.ddd > ");
-		while (!sc.hasNextDouble()) {
-			sc.next();
-			System.out.print("WRITE NUMBER NNN.DDD > ");
-		}
-		rd = sc.nextDouble();
+        Scanner sc = new Scanner(System.in);
 
-		rd1 = (int) rd / 1;
+        do {
+            System.out.print("Write number nnn.ddd > ");
 
-		dr = rd * 1000 - rd1 * 1000 + (double) rd1 / 1000;
+            while (!sc.hasNextDouble()) {
+                sc.next();
+                System.out.print("WRITE NUMBER NNN.DDD > ");
+                }
+            rd = sc.nextDouble();
+        } while ((rd >= 1000) | (rd <= -1000));
 
-		sc.close();
+        sc.close();
 
-		System.out.print("number ddd.nnn > " + dr);
+        rd1 = (int) rd / 1;
 
+        dr = rd * 1000 - rd1 * 1000 + (double) rd1 / 1000;
+
+        System.out.print("number ddd.nnn > " + dr);
 	}
-
 }
