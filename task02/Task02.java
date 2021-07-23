@@ -1,9 +1,7 @@
-/* ¹2. âû÷èñëèòü çíà÷åíèå âûðàæåíèÿ ïî ôîðìóëå (âñå ïåðåìåííûå ïðèíèìàþò 
- * äåéñòâèòåëüíûå çíà÷åíèÿ): z = ((b + sqrt(b*b+4*a*c)/2/a - a*a*a*c + 1/b/b);
+/* â„–2. Ð’Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð¿Ð¾ Ñ„Ð¾Ñ€Ð¼ÑƒÐ»Ðµ (Ð²ÑÐµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÑŽÑ‚ 
+ * Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð·Ð½Ð²Ñ‡ÐµÐ½Ð¸Ñ): z = ((b + sqrt(b*b+4*a*c)/2/a - a*a*a*c + 1/b/b);
  */
-
 package by.java.training.task02;
-
 /**
  * @author Siarhei Bialtsou
  */
@@ -11,46 +9,44 @@ import java.util.Scanner;
 
 public class Task02 {
 
-	public static void main(String[] args) {
-		double a;
-		double b;
-		double c;
-		double z;
+    public static void main(String[] args) {
+        double a;
+        double b;
+        double c;
+        double z;
+        /**
+         * a = 5.1; b = 13; c = 2; hardcore data;
+         */
+        Scanner sc = new Scanner(System.in);
 
-		/**
-		 * a = 5.1; b = 13; c = 2; hardcore data;
-		 */
+        System.out.println("Write basic data:");
 
-		Scanner sc = new Scanner(System.in);
+        System.out.print("Write a>");
+        while (!sc.hasNextDouble()) {
+            sc.next();
+            System.out.print("WRITE a>");
+        }
+        a = sc.nextDouble();
 
-		System.out.println("Write basic data:");
+        System.out.print("Write b>");
+        while (!sc.hasNextDouble()) {
+            sc.next();
+            System.out.print("WRITE b>");
+        }
+        b = sc.nextDouble();
 
-		System.out.print("Write a>");
-		while (!sc.hasNextDouble()) {
-			sc.next();
-			System.out.print("WRITE a>");
-		}
-		a = sc.nextDouble();
+        System.out.print("Write c>");
+        while (!sc.hasNextDouble()) {
+            sc.next();
+            System.out.print("WRITE c>");
+        }
+        c = sc.nextDouble();
 
-		System.out.print("Write b>");
-		while (!sc.hasNextDouble()) {
-			sc.next();
-			System.out.print("WRITE b>");
-		}
-		b = sc.nextDouble();
+        sc.close();
 
-		System.out.print("Write c>");
-		while (!sc.hasNextDouble()) {
-			sc.next();
-			System.out.print("WRITE c>");
-		}
-		c = sc.nextDouble();
+        z = (b + Math.sqrt(b * b + 4 * a * c)) / 2 / a - a * a * a * c + 1 / 
+                (b * b);
 
-		sc.close();
-
-		z = (b + Math.sqrt(b * b + 4 * a * c)) / 2 / a - a * a * a * c + 1 / 
-				(b * b);
-		
-		System.out.print("Result equals > z = " + z);
-	}
+        System.out.print("Result equals > z = " + z);
+    }
 }
