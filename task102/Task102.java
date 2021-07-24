@@ -1,4 +1,4 @@
-/**Ветвления №2. Найти Макс(миним(а;в), миним(с;д)).
+/**Р’РµС‚РІР»РµРЅРёСЏ в„–2. РќР°Р№С‚Рё max{min(a, b), min (c, d)}.
  */
 package by.java.training.task102;
 /**
@@ -7,7 +7,6 @@ package by.java.training.task102;
 public class Task102 {
 
     public static void main(String[] args) {
-
     
     }
 }
