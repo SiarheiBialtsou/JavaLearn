@@ -1,20 +1,13 @@
-/**
- * 
+/**Ветвления №2. Найти Макс(миним(а;в), миним(с;д)).
  */
 package by.java.training.task102;
-
 /**
- * @author zvezd
- *
+ * @author Siarhei Bialtsou
  */
 public class Task102 {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
 
-	}
-
+    
+    }
 }
